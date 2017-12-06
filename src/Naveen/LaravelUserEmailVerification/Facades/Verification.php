@@ -1,6 +1,6 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification\Facades;
+namespace Naveen\LaravelUserEmailVerification\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification\Contracts;
+namespace Naveen\LaravelUserEmailVerification\Contracts;
 
 use Closure;
 

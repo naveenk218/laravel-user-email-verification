@@ -1,11 +1,11 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Auth;
-use Krucas\LaravelUserEmailVerification\Facades\Verification;
+use Naveen\LaravelUserEmailVerification\Facades\Verification;
 
 trait RegistersUsers
 {

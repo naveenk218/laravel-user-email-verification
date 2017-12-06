@@ -1,11 +1,11 @@
 {
-  "name": "edvinaskrucas/laravel-user-email-verification",
+  "name": "naveenk218/laravel-user-email-verification",
   "keywords": ["laravel", "user verification", "email verification", "user email verification"],
   "description": "Laravel Package for easier user email verification.",
   "authors": [
     {
-      "name": "Edvinas Kručas",
-      "email": "edv.krucas@gmail.com"
+      "name": "naveenk218",
+      "email": "naveenk218@gmail.com"
     }
   ],
   "license": "MIT",
@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-0": {
-      "Krucas\\LaravelUserEmailVerification": "src/"
+      "Naveen\\LaravelUserEmailVerification": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Krucas\\LaravelUserEmailVerification\\Test\\": "tests"
+      "Naveen\\LaravelUserEmailVerification\\Test\\": "tests"
     }
   }
 }

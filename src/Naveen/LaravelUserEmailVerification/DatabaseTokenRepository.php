@@ -1,11 +1,11 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Carbon\Carbon;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Support\Str;
-use Krucas\LaravelUserEmailVerification\Contracts;
+use Naveen\LaravelUserEmailVerification\Contracts;
 
 class DatabaseTokenRepository implements Contracts\TokenRepositoryInterface
 {
@@ -56,7 +56,7 @@ class DatabaseTokenRepository implements Contracts\TokenRepositoryInterface
     /**
      * Create a new token.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @return string
      */
     public function create(Contracts\RequiresEmailVerification $user)
@@ -75,7 +75,7 @@ class DatabaseTokenRepository implements Contracts\TokenRepositoryInterface
     /**
      * Delete all existing reset tokens from the database.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @return int
      */
     protected function deleteExisting(Contracts\RequiresEmailVerification $user)
@@ -98,7 +98,7 @@ class DatabaseTokenRepository implements Contracts\TokenRepositoryInterface
     /**
      * Determine if a token record exists and is valid.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @param string $token
      * @return bool
      */

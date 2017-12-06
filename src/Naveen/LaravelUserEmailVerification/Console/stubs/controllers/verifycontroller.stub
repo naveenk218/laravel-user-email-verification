@@ -3,7 +3,7 @@
 namespace {{namespace}}Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Krucas\LaravelUserEmailVerification\VerifiesUsers;
+use Naveen\LaravelUserEmailVerification\VerifiesUsers;
 
 class VerifyController extends Controller
 {

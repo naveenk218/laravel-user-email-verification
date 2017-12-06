@@ -1,13 +1,13 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification\Contracts;
+namespace Naveen\LaravelUserEmailVerification\Contracts;
 
 interface TokenRepositoryInterface
 {
     /**
      * Create a new token.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @return string
      */
     public function create(RequiresEmailVerification $user);
@@ -15,7 +15,7 @@ interface TokenRepositoryInterface
     /**
      * Determine if a token record exists and is valid.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @param string $token
      * @return bool
      */

@@ -1,20 +1,20 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Closure;
 use Illuminate\Support\Arr;
 use UnexpectedValueException;
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Mail\Mailer;
-use Krucas\LaravelUserEmailVerification\Contracts;
+use Naveen\LaravelUserEmailVerification\Contracts;
 
 class VerificationBroker implements Contracts\VerificationBroker
 {
     /**
      * The verification token repository.
      *
-     * @var \Krucas\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
+     * @var \Naveen\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
      */
     protected $tokens;
 
@@ -40,7 +40,7 @@ class VerificationBroker implements Contracts\VerificationBroker
     protected $emailView;
 
     /**
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface $tokens
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface $tokens
      * @param \Illuminate\Contracts\Auth\UserProvider $users
      * @param \Illuminate\Contracts\Mail\Mailer $mailer
      * @param string $emailView
@@ -78,7 +78,7 @@ class VerificationBroker implements Contracts\VerificationBroker
     /**
      * Send the email verification link via e-mail.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @param string $token
      * @param \Closure|null $callback
      * @return int
@@ -122,7 +122,7 @@ class VerificationBroker implements Contracts\VerificationBroker
      * Validate verification for the given credentials.
      *
      * @param array $credentials
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification
      */
     protected function validateVerification(array $credentials)
     {
@@ -141,7 +141,7 @@ class VerificationBroker implements Contracts\VerificationBroker
      * Get the user for the given credentials.
      *
      * @param array $credentials
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification
      *
      * @throws \UnexpectedValueException
      */
@@ -161,7 +161,7 @@ class VerificationBroker implements Contracts\VerificationBroker
     /**
      * Get the verification token repository implementation.
      *
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
      */
     public function getRepository()
     {

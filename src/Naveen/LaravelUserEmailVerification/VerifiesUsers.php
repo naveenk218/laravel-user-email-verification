@@ -1,13 +1,13 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Auth;
-use Krucas\LaravelUserEmailVerification\Facades\Verification;
-use Krucas\LaravelUserEmailVerification\Contracts;
+use Naveen\LaravelUserEmailVerification\Facades\Verification;
+use Naveen\LaravelUserEmailVerification\Contracts;
 
 trait VerifiesUsers
 {
@@ -58,7 +58,7 @@ trait VerifiesUsers
     /**
      * Verify user.
      *
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @return void
      */
     protected function verifyUser($user)

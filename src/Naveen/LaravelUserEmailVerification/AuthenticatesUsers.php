@@ -1,10 +1,10 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Illuminate\Foundation\Auth\RedirectsUsers as LaravelRedirectsUsers;
 use Illuminate\Http\Request;
-use Krucas\LaravelUserEmailVerification\Contracts;
+use Naveen\LaravelUserEmailVerification\Contracts;
 use Illuminate\Support\Facades\Auth;
 
 trait AuthenticatesUsers
@@ -15,7 +15,7 @@ trait AuthenticatesUsers
      * Check if user is verified or not.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \Krucas\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
+     * @param \Naveen\LaravelUserEmailVerification\Contracts\RequiresEmailVerification $user
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function authenticated(Request $request, Contracts\RequiresEmailVerification $user)

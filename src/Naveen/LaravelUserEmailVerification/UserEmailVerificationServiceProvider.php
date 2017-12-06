@@ -1,11 +1,11 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Illuminate\Support\ServiceProvider;
-use Krucas\LaravelUserEmailVerification\Console\ClearVerificationTokensCommand;
-use Krucas\LaravelUserEmailVerification\Console\MakeVerificationCommand;
-use Krucas\LaravelUserEmailVerification\Contracts;
+use Naveen\LaravelUserEmailVerification\Console\ClearVerificationTokensCommand;
+use Naveen\LaravelUserEmailVerification\Console\MakeVerificationCommand;
+use Naveen\LaravelUserEmailVerification\Contracts;
 
 class UserEmailVerificationServiceProvider extends ServiceProvider
 {

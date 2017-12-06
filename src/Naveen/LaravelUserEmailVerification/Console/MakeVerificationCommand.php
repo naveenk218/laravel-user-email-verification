@@ -1,6 +1,6 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification\Console;
+namespace Naveen\LaravelUserEmailVerification\Console;
 
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Console\Command;

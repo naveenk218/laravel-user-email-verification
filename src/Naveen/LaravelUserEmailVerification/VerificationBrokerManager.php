@@ -1,10 +1,10 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 use Closure;
 use InvalidArgumentException;
-use Krucas\LaravelUserEmailVerification\Contracts\Factory;
+use Naveen\LaravelUserEmailVerification\Contracts\Factory;
 
 class VerificationBrokerManager implements Factory
 {
@@ -56,7 +56,7 @@ class VerificationBrokerManager implements Factory
      * Attempt to get the broker from the local cache.
      *
      * @param string $name
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\VerificationBroker
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\VerificationBroker
      */
     protected function get($name)
     {
@@ -67,7 +67,7 @@ class VerificationBrokerManager implements Factory
      * Resolve the given broker.
      *
      * @param string $name
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\VerificationBroker
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\VerificationBroker
      */
     protected function resolve($name)
     {
@@ -100,7 +100,7 @@ class VerificationBrokerManager implements Factory
      * Create users broker.
      *
      * @param array $config
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\VerificationBroker
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\VerificationBroker
      */
     protected function createUsersBroker(array $config)
     {
@@ -116,7 +116,7 @@ class VerificationBrokerManager implements Factory
      * Create token repository
      *
      * @param array $config
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
      */
     protected function createTokenRepository(array $config)
     {
@@ -127,7 +127,7 @@ class VerificationBrokerManager implements Factory
      * Create database token repository.
      *
      * @param array $config
-     * @return \Krucas\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
+     * @return \Naveen\LaravelUserEmailVerification\Contracts\TokenRepositoryInterface
      */
     protected function createDatabaseRepository(array $config)
     {

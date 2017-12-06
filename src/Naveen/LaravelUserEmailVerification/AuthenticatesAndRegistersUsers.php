@@ -1,6 +1,6 @@
 <?php
 
-namespace Krucas\LaravelUserEmailVerification;
+namespace Naveen\LaravelUserEmailVerification;
 
 trait AuthenticatesAndRegistersUsers
 {
